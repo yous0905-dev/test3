@@ -1,0 +1,10 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData"
+	xmlns:ux="http://www.sap.com/Protocols/OData4SAP/UX" xmlns:gp="http://www.sap.com/Protocols/SAPData/GenericPlayer" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="S1">
+			<EntityType Name="contacts">
+				<Key><PropertyRef Name="AccountId"/></Key><Property Name="AccountId" Type="Edm.String" Nullable="false"/><Property Name="Email" Type="Edm.String" Nullable="true"/><Property Name="Name" Type="Edm.String" Nullable="false"/><Property Name="LeadSource" Type="Edm.String" Nullable="true"/><Documentation/></EntityType>
+			<EntityContainer Name="EC1" m:IsDefaultEntityContainer="true"><EntitySet Name="ContactsSet" EntityType="S1.contacts"/></EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
